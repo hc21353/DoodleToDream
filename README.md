@@ -1,4 +1,4 @@
-# SketchGPT Local
+# SketchGPT
 
 quickDraw 데이터를 활용한 stroke 기반 스케치 생성 및 분류 모델 학습 및 시각화 프로젝트
 
