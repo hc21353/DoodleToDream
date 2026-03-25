@@ -14,7 +14,7 @@ pip install torch torchvision --index-url [https://download.pytorch.org/whl/cu12
 pip install numpy matplotlib tqdm requests scikit-learn
 ```
 
-## 🚀 실행 방법
+## 실행 방법
 가상환경이 활성화된 상태에서 `sketchgpt_local.py`를 실행
 
 ```bash
