@@ -1,6 +1,6 @@
 # SketchGPT Local
 
-quickDraw 데이터를 활용한 stroke 기반 스케치 생성 및 분류 모델 (sketchGPT 논문 구현)
+quickDraw 데이터를 활용한 stroke 기반 스케치 생성 및 분류 모델 학습 및 시각화 프로젝트
 
 ## 환경 및 설치
 - **GPU:** NVIDIA GeForce RTX 3090 (VRAM 24GB)
