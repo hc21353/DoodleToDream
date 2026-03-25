@@ -1,8 +1,8 @@
 # SketchGPT Local
 
-RTX 3090 환경에서 구동되는 스케치 생성 모델 학습 및 시각화 프로젝트입니다.
+RTX 3090 환경에서 구동되는 스케치 생성 모델 학습 및 시각화 프로젝트
 
-## ⚙️ 환경 및 설치
+## 환경 및 설치
 - **GPU:** NVIDIA GeForce RTX 3090 (VRAM 24GB)
 - **IDE:** VSCode + Python 가상환경
 
@@ -15,10 +15,10 @@ pip install numpy matplotlib tqdm requests scikit-learn
 ```
 
 ## 🚀 실행 방법
-가상환경이 활성화된 상태에서 `sketchgpt_local.py`를 실행합니다.
+가상환경이 활성화된 상태에서 `sketchgpt_local.py`를 실행
 
 ```bash
 python sketchgpt_local.py
 ```
 
-기본적으로 `main()` 함수가 실행되며, 특정 단계를 스킵하고 싶다면 파이썬 파일 내부의 `if __name__ == "__main__":` 블록에서 인자를 수정하세요. (상세 옵션은 코드 내부 주석 참고)
+기본적으로 `main()` 함수가 실행되며, 특정 단계를 스킵하고 싶다면 파이썬 파일 내부의 `if __name__ == "__main__":` 블록에서 인자를 수정 (상세 옵션은 코드 내부 주석 참고)
