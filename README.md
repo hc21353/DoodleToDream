@@ -21,4 +21,4 @@ pip install numpy matplotlib tqdm requests scikit-learn
 python sketchgpt_local.py
 ```
 
-기본적으로 `main()` 함수가 실행되며, 특정 단계를 스킵하고 싶다면 파이썬 파일 내부의 `if __name__ == "__main__":` 블록에서 인자를 수정 (상세 옵션은 코드 내부 주석 참고)
+기본적으로 `main()` 함수가 실행되며, 특정 단계를 스킵하고 싶다면 파이썬 파일 내부의 `if __name__ == "__main__":` 블록에서 인자 수정 (상세 옵션은 코드 내부 주석 참고)
