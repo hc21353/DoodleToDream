@@ -1,6 +1,5 @@
 """
 SketchGPT https://arxiv.org/abs/2405.03099 중 generation(completion) 부분만 구현
-
 """
 
 # 1. 임포트
@@ -1030,7 +1029,7 @@ def main(skip_eda=False, skip_pretrain=False, skip_finetune=False):
         print("\n[Step 3] Pre-training (all classes mixed)")
         model = pretrain(model, train_ds, val_ds, DEVICE, sample_weights=sw)
 
-    # ── Step 4: 클래스별 Fine-tuning  ────────────────────────────
+    # ── Step 4: 클래스별 Fine-tuning  ──────────────────────────
     print(f"\n[Step 4] Per-class fine-tuning  ({len(CLASSES)} classes)")
     cls_models   = {}   # {cls_name: fine-tuned model}
     cls_datasets = {}   # {cls_name: full SketchDataset for visualization}
