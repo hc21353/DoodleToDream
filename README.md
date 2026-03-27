@@ -3,8 +3,7 @@
 quickDraw 데이터를 활용한 stroke 기반 스케치 생성 및 분류 모델 학습과 다각도 성능 평가(KID, Accuracy, Early Recognition) 프로젝트
 - **데이터셋**: Google QuickDraw (10개 클래스: airplane, bus, canoe, car, helicopter, hot air balloon, motorbike, sailboat, submarine, train)
 
-## 📂 프로젝트 구조 (Project Structure)
-현재 깃허브 저장소의 디렉토리 구조는 다음과 같습니다.
+## 프로젝트 구조
 
 ```text
 DoodleToDream/
@@ -18,6 +17,7 @@ DoodleToDream/
 ├── outputs/                  # 생성된 이미지 시퀀스 결과물
 ├── README.md                 # 프로젝트 통합 가이드
 └── sketchGPT.py              # sketchGPT 논문 기반 이미지 생성 실행 파일
+```
 
 ## 환경 및 설치
 - **GPU:** NVIDIA GeForce RTX 3090 (VRAM 24GB)
