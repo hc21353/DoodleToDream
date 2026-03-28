@@ -1,16 +1,17 @@
 # Doodle to Dream
 
-Doodle to Dream is a sketch generation project built for sketchbook / Pictionary-like game settings.  
+Doodle to Dream is a sketch generation project for sketchbook / Pictionary-like game settings.  
 This repository implements and compares two stroke-based generation pipelines, **SketchGPT** and **VQ-SGen**, on QuickDraw-style data.
 
-Unlike the original papers, this project is focused on **practical sequential visualization**: instead of only producing final sketches, it saves and displays how each drawing appears **stroke by stroke** so the generation process can be inspected directly.
+Unlike the original papers, this project focuses on **practical sequential visualization**.  
+Instead of only producing a final sketch, it saves and displays how each drawing appears **stroke by stroke**, making the generation process easier to inspect and compare.
 
 ## Visual Examples
 
-The GIFs below show example outputs from the two implemented pipelines.
+The examples below show representative outputs from the two implemented pipelines.
 
 - **SketchGPT**: prompt-based sketch completion from a partial drawing
-- **VQ-SGen**: token-based sketch generation with step-by-step visual outputs
+- **VQ-SGen**: token-based sketch generation with sequential visual outputs
 
 ## SketchGPT
 
@@ -41,9 +42,9 @@ This repository contains two separate implementations built around the same goal
 - **SketchGPT** is implemented as a primitive-token autoregressive completion pipeline.
 - **VQ-SGen** is implemented as a shape/location token generation pipeline.
 
-The main purpose of this project is to compare how these two approaches behave in a sequential drawing setting.
+The project is designed to compare how these two approaches behave in a sequential drawing setting.
 
-## What is different from the original papers?
+## Differences from the Original Papers
 
 This repository is **not a strict reproduction** of the original papers.
 
@@ -52,9 +53,9 @@ Instead, it adapts the ideas behind SketchGPT and VQ-SGen into a single project 
 - **QuickDraw-based experiments**
 - **stroke-by-stroke visualization**
 - **game-oriented sketch generation**
-- **easy comparison between two generation styles**
+- **direct comparison between two generation styles**
 
-In particular, this implementation emphasizes saving intermediate drawing steps, preview images, and GIF-style outputs so that the drawing process itself can be analyzed.
+In particular, this implementation emphasizes intermediate drawing steps, preview images, and GIF-style outputs so that the drawing process itself can be analyzed.
 
 ## Environment Setup
 
