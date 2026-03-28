@@ -1,14 +1,10 @@
 # Doodle to Dream
 
-**Stroke-by-stroke sketch generation for a sketchbook / drawing-game setting, implemented with two complementary approaches: SketchGPT and VQ-SGen.**
-
-This repository explores how to generate a sketch *one stroke at a time* rather than only producing a final static image. The core idea is simple: in a sketchbook-style game, the drawing process itself matters. A good model should not only end with a recognizable sketch, but should also reveal the object progressively as strokes accumulate.
-
+![VQSGen_submarine](https://github.com/user-attachments/assets/8396c394-8bb9-456b-afbb-2536756cfcf2)
+![VQSGen_helicopter](https://github.com/user-attachments/assets/330d5931-5eae-42b3-b92a-08d39137f6b2)
 
 
-## Overview![KakaoTalk_Photo_2026-03-28-22-15-31 001](https://github.com/user-attachments/assets/295bf110-3fa5-467f-b53a-d57229b2a649)
-![KakaoTalk_Photo_2026-03-28-22-15-31 002](https://github.com/user-attachments/assets/5856ebbd-c496-425a-b8d9-efe579874ec2)
-
+## Overview
 
 The project contains two separate pipelines built around the same goal:
 
