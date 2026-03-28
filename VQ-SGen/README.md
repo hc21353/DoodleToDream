@@ -1,16 +1,15 @@
 # Doodle to Dream
 
-Doodle to Dream is a sketch generation project for sketchbook / Pictionary-like game settings.  
+Doodle to Dream is a sketch generation project for sketchbook / Pictionary-like game settings.
 This repository implements and compares two stroke-based generation pipelines, **SketchGPT** and **VQ-SGen**, on QuickDraw-style data.
 
-Unlike the original papers, this project focuses on **practical sequential visualization**.  
-Instead of only producing a final sketch, it saves and displays how each drawing appears **stroke by stroke**, making the generation process easier to inspect and compare.
+Rather than focusing only on the final sketch, this project emphasizes **stroke-by-stroke generation and visualization**, so the full drawing process can be observed and compared.
 
 ## Visual Examples
 
-The examples below show representative outputs from the two implemented pipelines.
+The GIFs below show representative outputs from the two implemented pipelines.
 
-- **SketchGPT**: prompt-based sketch completion from a partial drawing
+- **SketchGPT**: prompt-based completion from a partially given sketch
 - **VQ-SGen**: token-based sketch generation with sequential visual outputs
 
 ## SketchGPT
@@ -35,27 +34,27 @@ The examples below show representative outputs from the two implemented pipeline
   Stroke-wise generation examples produced by the VQ-SGen pipeline.
 </p>
 
-## Project Summary
+## Project
 
-This repository contains two separate implementations built around the same goal: generating sketches as a **sequence of strokes** rather than as a single final image.
+This repository contains two implementations for sequential sketch generation.
 
 - **SketchGPT** is implemented as a primitive-token autoregressive completion pipeline.
 - **VQ-SGen** is implemented as a shape/location token generation pipeline.
 
-The project is designed to compare how these two approaches behave in a sequential drawing setting.
+The main goal of this project is to compare how these two approaches generate sketches over time in a game-like drawing setting.
 
 ## Differences from the Original Papers
 
 This repository is **not a strict reproduction** of the original papers.
 
-Instead, it adapts the ideas behind SketchGPT and VQ-SGen into a single project with a stronger focus on:
+Instead, it adapts the ideas behind SketchGPT and VQ-SGen with a stronger focus on:
 
 - **QuickDraw-based experiments**
 - **stroke-by-stroke visualization**
 - **game-oriented sketch generation**
 - **direct comparison between two generation styles**
 
-In particular, this implementation emphasizes intermediate drawing steps, preview images, and GIF-style outputs so that the drawing process itself can be analyzed.
+In particular, this implementation emphasizes intermediate drawing steps and GIF-style outputs so that the generation process itself can be inspected.
 
 ## Environment Setup
 
@@ -66,3 +65,50 @@ python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
+```
+
+## How to Run
+
+### Run SketchGPT
+
+```bash
+python3 scripts/run_sketchgpt.py
+```
+
+### Run VQ-SGen
+
+```bash
+python3 scripts/run_vq_sgen.py
+```
+
+### Optional Syntax Checks
+
+```bash
+python3 scripts/check_sketchgpt.py
+python3 scripts/check_vq_sgen.py
+```
+
+## Repository Structure
+
+```text
+DoodleToDream-main/
+├── README.md
+├── pyproject.toml
+├── requirements.txt
+├── scripts/
+│   ├── check_sketchgpt.py
+│   ├── check_vq_sgen.py
+│   ├── run_sketchgpt.py
+│   └── run_vq_sgen.py
+├── SketchGPT/
+│   ├── configs/
+│   └── src/sketchgpt/
+├── VQ-SGen/
+│   ├── configs/
+│   └── src/vq_sgen/
+├── evaluation_metrics/
+│   ├── classification_metrics.py
+│   ├── evaluation_KID.py
+│   └── KID/
+└── sketchGPT.py
+```
