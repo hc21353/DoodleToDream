@@ -40,16 +40,7 @@ The main goal of this project is to compare how these two approaches generate sk
 
 ## Differences from the Original Papers
 
-This repository is **not a strict reproduction** of the original papers.
-
-Instead, it adapts the ideas behind SketchGPT and VQ-SGen with a stronger focus on:
-
-- **QuickDraw-based experiments**
-- **stroke-by-stroke visualization**
-- **game-oriented sketch generation**
-- **direct comparison between two generation styles**
-
-In particular, this implementation emphasizes intermediate drawing steps and GIF-style outputs so that the generation process itself can be inspected.
+@@@
 
 ## Environment Setup
 
