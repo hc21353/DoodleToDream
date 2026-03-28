@@ -4,11 +4,11 @@
 
 This repository explores how to generate a sketch *one stroke at a time* rather than only producing a final static image. The core idea is simple: in a sketchbook-style game, the drawing process itself matters. A good model should not only end with a recognizable sketch, but should also reveal the object progressively as strokes accumulate.
 
-<p align="center">
-  <img src="docs/images/quickdraw_gallery.png" alt="QuickDraw class gallery" width="100%" />
-</p>
 
-## Overview
+
+## Overview![KakaoTalk_Photo_2026-03-28-22-15-31 001](https://github.com/user-attachments/assets/295bf110-3fa5-467f-b53a-d57229b2a649)
+![KakaoTalk_Photo_2026-03-28-22-15-31 002](https://github.com/user-attachments/assets/5856ebbd-c496-425a-b8d9-efe579874ec2)
+
 
 The project contains two separate pipelines built around the same goal:
 
