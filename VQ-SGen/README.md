@@ -81,13 +81,6 @@ python3 scripts/run_sketchgpt.py
 python3 scripts/run_vq_sgen.py
 ```
 
-### Optional Syntax Checks
-
-```bash
-python3 scripts/check_sketchgpt.py
-python3 scripts/check_vq_sgen.py
-```
-
 ## Repository Structure
 
 ```text
