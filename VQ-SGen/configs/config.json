@@ -1,0 +1,65 @@
+{
+  "NOTEBOOK_VER": 27,
+  "RUN_MODE": "train",
+  "RUN_SUFFIX": "main",
+  "RESET_WORKSPACE": false,
+  "FORCE_DOWNLOAD": false,
+  "NUM_WORKERS": 4,
+  "PROJECT_SEED": 42,
+  "SAVE_NEWLY_TRAINED_MODELS_TO_GDRIVE": true,
+
+  "USER_CLASSES": [
+    "hot air balloon",
+    "motorbike",
+    "sailboat",
+    "airplane",
+    "helicopter",
+    "submarine",
+    "canoe",
+    "bus",
+    "car",
+    "train"
+  ],
+
+  "USE_PRETRAINED_WEIGHTS": {
+    "shape_ae": true,
+    "location_ae": true,
+    "shape_tokenizer": true,
+    "location_tokenizer": true,
+    "generator": false
+  },
+
+  "TRAIN_OR_FINETUNE": {
+    "shape_ae": false,
+    "location_ae": false,
+    "shape_tokenizer": false,
+    "location_tokenizer": false,
+    "generator": true
+  },
+
+  "MODEL_DATASET_ASSIGNMENTS": {
+    "shape_ae": "target_quickdraw",
+    "location_ae": "target_quickdraw",
+    "shape_tokenizer": "target_quickdraw",
+    "location_tokenizer": "target_quickdraw",
+    "generator": "target_quickdraw"
+  },
+
+  "DRIVE_PROJECT_ROOT": "/content/drive/MyDrive/Current/빅데이터AI핀테크/딥러닝",
+
+  "TARGET_DATASET_FRACTION": 1.0,
+  "TARGET_REPRESENTATION_MAX_DRAWINGS_PER_CLASS": 1000,
+  "MAX_STROKES": 32,
+
+  "SHAPE_AE_EPOCHS": 80,
+  "LOCATION_AE_EPOCHS": 40,
+  "SHAPE_TOKENIZER_EPOCHS": 100,
+  "LOCATION_TOKENIZER_EPOCHS": 80,
+  "GENERATOR_EPOCHS": 50,
+
+  "SHAPE_CODEBOOK_SIZE": 8192,
+  "LOCATION_CODEBOOK_SIZE": 8192,
+
+  "GENERATOR_TEMPERATURE": 1.0,
+  "GENERATOR_TOP_P": 0.9
+}

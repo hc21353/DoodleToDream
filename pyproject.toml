@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vq-sgen-sketchgpt-workspace"
+version = "0.1.0"
+description = "Monorepo workspace for VQ-SGen and SketchGPT"
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+  "torch",
+  "numpy",
+  "matplotlib",
+  "Pillow",
+  "scipy",
+  "tqdm",
+  "imageio",
+  "requests",
+  "scikit-learn",
+]
+
+[tool.setuptools]
+py-modules = []

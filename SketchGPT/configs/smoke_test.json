@@ -1,0 +1,33 @@
+{
+  "skip_eda": false,
+  "skip_pretrain": false,
+  "skip_finetune": false,
+
+  "classes": ["airplane", "bus"],
+  "n_train_per_class": 16,
+  "n_val_per_class": 8,
+  "n_test_per_class": 8,
+  "n_pretrain_per_class": 16,
+
+  "max_seq": 64,
+  "max_seq_hard_limit": 64,
+
+  "n_layers": 2,
+  "n_heads": 4,
+  "d_model": 64,
+  "dropout": 0.1,
+
+  "pretrain_batch": 4,
+  "pretrain_epochs": 1,
+  "pretrain_lr": 0.001,
+  "finetune_epochs": 1,
+  "finetune_lr": 0.0005,
+  "early_stop_patience": 1,
+
+  "loader_num_workers": 0,
+  "loader_pin_memory": false,
+  "loader_persistent_workers": false,
+
+  "prompt_ratio": 0.5,
+  "min_new_tokens": 8
+}

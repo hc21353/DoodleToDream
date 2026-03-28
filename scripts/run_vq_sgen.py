@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import os
+from pathlib import Path
+import sys
+
+
+def main() -> int:
+    root = Path(__file__).resolve().parent.parent
+    cache_dir = root / "data" / "quickdraw"
+    if "QUICKDRAW_CACHE_DIR" not in os.environ and cache_dir.is_dir():
+        os.environ["QUICKDRAW_CACHE_DIR"] = str(cache_dir)
+    if "MPLCONFIGDIR" not in os.environ:
+        os.environ["MPLCONFIGDIR"] = "/tmp/matplotlib"
+    os.makedirs(os.environ["MPLCONFIGDIR"], exist_ok=True)
+
+    project = root / "VQ-SGen"
+    src = project / "src"
+    if str(src) not in sys.path:
+        sys.path.insert(0, str(src))
+    os.chdir(project)
+
+    # Forward CLI args to vq_sgen.__main__
+    from vq_sgen.__main__ import main as entry_main
+
+    return int(entry_main())
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
