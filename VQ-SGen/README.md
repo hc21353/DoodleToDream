@@ -1,25 +1,19 @@
 # Doodle to Dream
-# Doodle to Dream
 
 ## SketchGPT
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6b1173a6-79a3-4029-afe7-45548e42bb3f" alt="SketchGPT car generation" width="700" />
-</p>
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/7f017b68-b889-450a-b83f-3f9e31a90a03" alt="SketchGPT helicopter generation" width="700" />
+  <img src="https://github.com/user-attachments/assets/6b1173a6-79a3-4029-afe7-45548e42bb3f" alt="SketchGPT car generation" width="360" />
+  <img src="https://github.com/user-attachments/assets/7f017b68-b889-450a-b83f-3f9e31a90a03" alt="SketchGPT helicopter generation" width="360" />
 </p>
 
 ## VQ-SGen
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8396c394-8bb9-456b-afbb-2536756cfcf2" alt="VQ-SGen submarine generation" width="700" />
+  <img src="https://github.com/user-attachments/assets/8396c394-8bb9-456b-afbb-2536756cfcf2" alt="VQ-SGen submarine generation" width="360" />
+  <img src="https://github.com/user-attachments/assets/330d5931-5eae-42b3-b92a-08d39137f6b2" alt="VQ-SGen helicopter generation" width="360" />
 </p>
 
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/330d5931-5eae-42b3-b92a-08d39137f6b2" alt="VQ-SGen helicopter generation" width="700" />
-</p>
 
 ## Overview
 
