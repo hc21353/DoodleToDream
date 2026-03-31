@@ -18,46 +18,24 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 <table>
   <tr>
     <td align="center">
-      <img src="assets/classification/confidence_curve/airplane.png" width="180" alt="airplane confidence curve" /><br/>
-      <strong>airplane · confidence=0.91</strong>
+      <img src="assets/classification/confidence_curve/sample1_step1.png" width="180" alt="step 1" /><br/>
+      <strong>confidence = 0.12</strong>
     </td>
     <td align="center">
-      <img src="assets/classification/confidence_curve/bus.png" width="180" alt="bus confidence curve" /><br/>
-      <strong>bus · confidence=0.88</strong>
+      <img src="assets/classification/confidence_curve/sample1_step2.png" width="180" alt="step 2" /><br/>
+      <strong>confidence = 0.34</strong>
     </td>
     <td align="center">
-      <img src="assets/classification/confidence_curve/canoe.png" width="180" alt="canoe confidence curve" /><br/>
-      <strong>canoe · confidence=0.83</strong>
+      <img src="assets/classification/confidence_curve/sample1_step3.png" width="180" alt="step 3" /><br/>
+      <strong>confidence = 0.57</strong>
     </td>
     <td align="center">
-      <img src="assets/classification/confidence_curve/car.png" width="180" alt="car confidence curve" /><br/>
-      <strong>car · confidence=0.95</strong>
+      <img src="assets/classification/confidence_curve/sample1_step4.png" width="180" alt="step 4" /><br/>
+      <strong>confidence = 0.81</strong>
     </td>
     <td align="center">
-      <img src="assets/classification/confidence_curve/helicopter.png" width="180" alt="helicopter confidence curve" /><br/>
-      <strong>helicopter · confidence=0.89</strong>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/hot_air_balloon.png" width="180" alt="hot air balloon confidence curve" /><br/>
-      <strong>hot air balloon · confidence=0.86</strong>
-    </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/motorbike.png" width="180" alt="motorbike confidence curve" /><br/>
-      <strong>motorbike · confidence=0.90</strong>
-    </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/sailboat.png" width="180" alt="sailboat confidence curve" /><br/>
-      <strong>sailboat · confidence=0.84</strong>
-    </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/submarine.png" width="180" alt="submarine confidence curve" /><br/>
-      <strong>submarine · confidence=0.81</strong>
-    </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/train.png" width="180" alt="train confidence curve" /><br/>
-      <strong>train · confidence=0.93</strong>
+      <img src="assets/classification/confidence_curve/sample1_step5.png" width="180" alt="step 5" /><br/>
+      <strong>confidence = 0.93</strong>
     </td>
   </tr>
 </table>
