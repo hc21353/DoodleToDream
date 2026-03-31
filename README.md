@@ -13,39 +13,6 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ## player1 - classification
 
-### Stroke-by-stroke drawing process
-
-<table>
-  <tr>
-    <td align="center"><strong>airplane · confidence=0.91</strong></td>
-    <td align="center"><strong>bus · confidence=0.88</strong></td>
-    <td align="center"><strong>canoe · confidence=0.83</strong></td>
-    <td align="center"><strong>car · confidence=0.95</strong></td>
-    <td align="center"><strong>helicopter · confidence=0.89</strong></td>
-  </tr>
-  <tr>
-    <td><img src="assets/classification/stroke_progress/airplane.png" width="180" alt="airplane classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/bus.png" width="180" alt="bus classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/canoe.png" width="180" alt="canoe classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/car.png" width="180" alt="car classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/helicopter.png" width="180" alt="helicopter classification progress" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>hot air balloon · confidence=0.86</strong></td>
-    <td align="center"><strong>motorbike · confidence=0.90</strong></td>
-    <td align="center"><strong>sailboat · confidence=0.84</strong></td>
-    <td align="center"><strong>submarine · confidence=0.81</strong></td>
-    <td align="center"><strong>train · confidence=0.93</strong></td>
-  </tr>
-  <tr>
-    <td><img src="assets/classification/stroke_progress/hot_air_balloon.png" width="180" alt="hot air balloon classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/motorbike.png" width="180" alt="motorbike classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/sailboat.png" width="180" alt="sailboat classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/submarine.png" width="180" alt="submarine classification progress" /></td>
-    <td><img src="assets/classification/stroke_progress/train.png" width="180" alt="train classification progress" /></td>
-  </tr>
-</table>
-
 ### Confidence score over time
 
 <table>
@@ -153,9 +120,13 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 # Implementation Detail
 
-The project is organized around two complementary roles. The **classification** side evaluates how recognizable a sketch is as strokes accumulate, using classifier confidence and early-recognition style analysis rather than only final accuracy. This lets us measure not just whether a drawing is correct, but also **when** it becomes recognizable during the drawing process.
+## Classification
 
-The **generation** side compares two stroke-based sketch generators on QuickDraw categories. **SketchGPT** models sketch creation as autoregressive token generation over primitive-like stroke representations, while **VQ-SGen** generates sketches through discrete shape/location-style representations. Together, they provide a direct comparison of two different sequential drawing pipelines under the same class-conditional setting.
+## Generation
+
+### SketchGPT
+
+### VQ-SGen
 
 ---
 
@@ -167,7 +138,7 @@ conda activate quickdraw
 pip install -r requirements.txt
 ```
 
-## Repository Structure
+# Repository Structure
 
 ```text
 DoodleToDream-main/
