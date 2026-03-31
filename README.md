@@ -121,17 +121,6 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 ### SketchGPT
 
 
-![VQSGen_canoe](https://github.com/user-attachments/assets/f462eaaa-4736-4620-a8c3-dc042f8164af)
-![VQSGen_train](https://github.com/user-attachments/assets/ae53a3f6-85a3-4753-b10a-68b421ea3526)
-![VQSGen_hotairballoon](https://github.com/user-attachments/assets/7784982f-fa75-49f6-89f3-7e0d5aa4485f)
-![VQSGen_motorbike](https://github.com/user-attachments/assets/06ec801b-fd15-4a46-a36f-4542c7db876f)
-![VQSGen_car](https://github.com/user-attachments/assets/f84e2735-e821-428b-844e-f787f2372903)
-![VQSGen_sailboat](https://github.com/user-attachments/assets/765b7534-d348-4b29-bc62-3c8722b38550)
-![VQSGen_bus](https://github.com/user-attachments/assets/dc4bf3dc-f31f-45d7-81bf-c4dd11e244f3)
-![VQSGen_submarine](https://github.com/user-attachments/assets/f8fcb9fd-6f36-4e43-8bb3-b19408c5e85e)
-![VQSGen_helicopter](https://github.com/user-attachments/assets/bbd12eca-1d06-4652-8bb8-8d2542a53a42)
-
-
 ### VQ-SGen
 
 ---
