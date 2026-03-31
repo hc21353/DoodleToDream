@@ -17,32 +17,48 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 <table>
   <tr>
-    <td align="center"><strong>airplane</strong></td>
-    <td align="center"><strong>bus</strong></td>
-    <td align="center"><strong>canoe</strong></td>
-    <td align="center"><strong>car</strong></td>
-    <td align="center"><strong>helicopter</strong></td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/airplane.png" width="180" alt="airplane confidence curve" /><br/>
+      <strong>airplane · confidence=0.91</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/bus.png" width="180" alt="bus confidence curve" /><br/>
+      <strong>bus · confidence=0.88</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/canoe.png" width="180" alt="canoe confidence curve" /><br/>
+      <strong>canoe · confidence=0.83</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/car.png" width="180" alt="car confidence curve" /><br/>
+      <strong>car · confidence=0.95</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/helicopter.png" width="180" alt="helicopter confidence curve" /><br/>
+      <strong>helicopter · confidence=0.89</strong>
+    </td>
   </tr>
   <tr>
-    <td><img src="assets/classification/confidence_curve/airplane.png" width="180" alt="airplane confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/bus.png" width="180" alt="bus confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/canoe.png" width="180" alt="canoe confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/car.png" width="180" alt="car confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/helicopter.png" width="180" alt="helicopter confidence curve" /></td>
-  </tr>
-  <tr>
-    <td align="center"><strong>hot air balloon</strong></td>
-    <td align="center"><strong>motorbike</strong></td>
-    <td align="center"><strong>sailboat</strong></td>
-    <td align="center"><strong>submarine</strong></td>
-    <td align="center"><strong>train</strong></td>
-  </tr>
-  <tr>
-    <td><img src="assets/classification/confidence_curve/hot_air_balloon.png" width="180" alt="hot air balloon confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/motorbike.png" width="180" alt="motorbike confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/sailboat.png" width="180" alt="sailboat confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/submarine.png" width="180" alt="submarine confidence curve" /></td>
-    <td><img src="assets/classification/confidence_curve/train.png" width="180" alt="train confidence curve" /></td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/hot_air_balloon.png" width="180" alt="hot air balloon confidence curve" /><br/>
+      <strong>hot air balloon · confidence=0.86</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/motorbike.png" width="180" alt="motorbike confidence curve" /><br/>
+      <strong>motorbike · confidence=0.90</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/sailboat.png" width="180" alt="sailboat confidence curve" /><br/>
+      <strong>sailboat · confidence=0.84</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/submarine.png" width="180" alt="submarine confidence curve" /><br/>
+      <strong>submarine · confidence=0.81</strong>
+    </td>
+    <td align="center">
+      <img src="assets/classification/confidence_curve/train.png" width="180" alt="train confidence curve" /><br/>
+      <strong>train · confidence=0.93</strong>
+    </td>
   </tr>
 </table>
 
