@@ -89,10 +89,10 @@ The project focuses not only on final sketch quality, but also on the **drawing 
   </tr>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/526a579e-233f-41f1-8317-b8d76f75e7a3" width="180" alt="VQ-SGen airplane gif" /></td>
-    <td><img src="PUT_BUS_GIF_LINK_HERE" width="180" alt="VQ-SGen bus gif" /></td>
-    <td><img src="PUT_CANOE_GIF_LINK_HERE" width="180" alt="VQ-SGen canoe gif" /></td>
-    <td><img src="PUT_CAR_GIF_LINK_HERE" width="180" alt="VQ-SGen car gif" /></td>
-    <td><img src="PUT_HELICOPTER_GIF_LINK_HERE" width="180" alt="VQ-SGen helicopter gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/dc4bf3dc-f31f-45d7-81bf-c4dd11e244f3" width="180" alt="VQ-SGen bus gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/f462eaaa-4736-4620-a8c3-dc042f8164af" width="180" alt="VQ-SGen canoe gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/f84e2735-e821-428b-844e-f787f2372903" width="180" alt="VQ-SGen car gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/bbd12eca-1d06-4652-8bb8-8d2542a53a42" width="180" alt="VQ-SGen helicopter gif" /></td>
   </tr>
   <tr>
     <td align="center"><strong>hot air balloon</strong></td>
@@ -102,11 +102,11 @@ The project focuses not only on final sketch quality, but also on the **drawing 
     <td align="center"><strong>train</strong></td>
   </tr>
   <tr>
-    <td><img src="PUT_HOT_AIR_BALLOON_GIF_LINK_HERE" width="180" alt="VQ-SGen hot air balloon gif" /></td>
-    <td><img src="PUT_MOTORBIKE_GIF_LINK_HERE" width="180" alt="VQ-SGen motorbike gif" /></td>
-    <td><img src="PUT_SAILBOAT_GIF_LINK_HERE" width="180" alt="VQ-SGen sailboat gif" /></td>
-    <td><img src="PUT_SUBMARINE_GIF_LINK_HERE" width="180" alt="VQ-SGen submarine gif" /></td>
-    <td><img src="PUT_TRAIN_GIF_LINK_HERE" width="180" alt="VQ-SGen train gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/7784982f-fa75-49f6-89f3-7e0d5aa4485f" width="180" alt="VQ-SGen hot air balloon gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/06ec801b-fd15-4a46-a36f-4542c7db876f" width="180" alt="VQ-SGen motorbike gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/765b7534-d348-4b29-bc62-3c8722b38550" width="180" alt="VQ-SGen sailboat gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/f8fcb9fd-6f36-4e43-8bb3-b19408c5e85e" width="180" alt="VQ-SGen submarine gif" /></td>
+    <td><img src="https://github.com/user-attachments/assets/ae53a3f6-85a3-4753-b10a-68b421ea3526" width="180" alt="VQ-SGen train gif" /></td>
   </tr>
 </table>
 
@@ -121,6 +121,15 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 ### SketchGPT
 
 
+![VQSGen_canoe](https://github.com/user-attachments/assets/f462eaaa-4736-4620-a8c3-dc042f8164af)
+![VQSGen_train](https://github.com/user-attachments/assets/ae53a3f6-85a3-4753-b10a-68b421ea3526)
+![VQSGen_hotairballoon](https://github.com/user-attachments/assets/7784982f-fa75-49f6-89f3-7e0d5aa4485f)
+![VQSGen_motorbike](https://github.com/user-attachments/assets/06ec801b-fd15-4a46-a36f-4542c7db876f)
+![VQSGen_car](https://github.com/user-attachments/assets/f84e2735-e821-428b-844e-f787f2372903)
+![VQSGen_sailboat](https://github.com/user-attachments/assets/765b7534-d348-4b29-bc62-3c8722b38550)
+![VQSGen_bus](https://github.com/user-attachments/assets/dc4bf3dc-f31f-45d7-81bf-c4dd11e244f3)
+![VQSGen_submarine](https://github.com/user-attachments/assets/f8fcb9fd-6f36-4e43-8bb3-b19408c5e85e)
+![VQSGen_helicopter](https://github.com/user-attachments/assets/bbd12eca-1d06-4652-8bb8-8d2542a53a42)
 
 
 ### VQ-SGen
