@@ -165,6 +165,7 @@ The **generation** side compares two stroke-based sketch generators on QuickDraw
 conda create -n quickdraw python=3.10
 conda activate quickdraw
 pip install -r requirements.txt
+```
 
 ## Repository Structure
 
