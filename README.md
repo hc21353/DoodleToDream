@@ -23,6 +23,7 @@ Rather than focusing only on the final sketch, this project emphasizes **stroke-
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8396c394-8bb9-456b-afbb-2536756cfcf2" alt="VQ-SGen submarine generation" width="360" />
   <img src="https://github.com/user-attachments/assets/330d5931-5eae-42b3-b92a-08d39137f6b2" alt="VQ-SGen helicopter generation" width="360" />
+  ![merged](https://github.com/user-attachments/assets/1a7eb0dc-7ae2-491b-b740-718ca1d1c7ea)
 </p>
 
 <p align="center">
