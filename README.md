@@ -29,9 +29,6 @@ Rather than focusing only on the final sketch, this project emphasizes **stroke-
   Stroke-wise generation examples produced by the VQ-SGen pipeline.
 </p>
 
-![merged](https://github.com/user-attachments/assets/5cb6b421-3aa8-4693-81ac-bf38ac4591ed)
-
-
 ## Project
 
 This repository contains two implementations for sequential sketch generation.
