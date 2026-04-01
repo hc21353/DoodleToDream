@@ -107,6 +107,7 @@ The project focuses not only on final sketch quality, but also on the **drawing 
     <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/ae53a3f6-85a3-4753-b10a-68b421ea3526" width="140" alt="VQ-SGen train gif" /></td>
   </tr>
 </table>
+
 ---
 
 # Implementation Detail
