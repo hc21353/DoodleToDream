@@ -1,5 +1,3 @@
-# QuickDraw README
-
 # Project Overview
 
 This project is inspired by **Quick, Draw!**, a game where one player draws as quickly as possible and the other tries to guess the category as early as possible. We implement both roles directly:
