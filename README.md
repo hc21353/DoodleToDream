@@ -57,7 +57,7 @@ The project focuses not only on final sketch quality, but also on the **drawing 
     <td width="20%" align="center"><img src="assets/generation/sketchgpt/bus.gif" width="140" alt="SketchGPT bus gif" /></td>
     <td width="20%" align="center"><img src="assets/generation/sketchgpt/canoe.gif" width="140" alt="SketchGPT canoe gif" /></td>
     <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/bd1ed43f-650d-4a55-9459-3104d120555c" width="140" alt="SketchGPT car gif" /></td>
-    <td width="20%" align="center"><img src="[assets/generation/sketchgpt/helicopter.gif](https://github.com/user-attachments/assets/df386b8f-6f28-484c-9f57-534680db6b86)" width="140" alt="SketchGPT helicopter gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/df386b8f-6f28-484c-9f57-534680db6b86" width="140" alt="SketchGPT helicopter gif" /></td>
   </tr>
   <tr>
     <td width="20%" align="center"><strong>hot air balloon</strong></td>
