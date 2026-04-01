@@ -13,26 +13,26 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ### Confidence score over time
 
-<table>
+<table width="100%">
   <tr>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/sample1_step1.png" width="180" alt="step 1" /><br/>
+    <td width="20%" align="center">
+      <img src="assets/classification/confidence_curve/sample1_step1.png" width="140" alt="step 1" /><br/>
       <strong>confidence = 0.12</strong>
     </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/sample1_step2.png" width="180" alt="step 2" /><br/>
+    <td width="20%" align="center">
+      <img src="assets/classification/confidence_curve/sample1_step2.png" width="140" alt="step 2" /><br/>
       <strong>confidence = 0.34</strong>
     </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/sample1_step3.png" width="180" alt="step 3" /><br/>
+    <td width="20%" align="center">
+      <img src="assets/classification/confidence_curve/sample1_step3.png" width="140" alt="step 3" /><br/>
       <strong>confidence = 0.57</strong>
     </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/sample1_step4.png" width="180" alt="step 4" /><br/>
+    <td width="20%" align="center">
+      <img src="assets/classification/confidence_curve/sample1_step4.png" width="140" alt="step 4" /><br/>
       <strong>confidence = 0.81</strong>
     </td>
-    <td align="center">
-      <img src="assets/classification/confidence_curve/sample1_step5.png" width="180" alt="step 5" /><br/>
+    <td width="20%" align="center">
+      <img src="assets/classification/confidence_curve/sample1_step5.png" width="140" alt="step 5" /><br/>
       <strong>confidence = 0.93</strong>
     </td>
   </tr>
@@ -44,34 +44,34 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ### SketchGPT stroke-by-stroke generation
 
-<table>
+<table width="100%">
   <tr>
-    <td align="center"><strong>airplane</strong></td>
-    <td align="center"><strong>bus</strong></td>
-    <td align="center"><strong>canoe</strong></td>
-    <td align="center"><strong>car</strong></td>
-    <td align="center"><strong>helicopter</strong></td>
+    <td width="20%" align="center"><strong>airplane</strong></td>
+    <td width="20%" align="center"><strong>bus</strong></td>
+    <td width="20%" align="center"><strong>canoe</strong></td>
+    <td width="20%" align="center"><strong>car</strong></td>
+    <td width="20%" align="center"><strong>helicopter</strong></td>
   </tr>
   <tr>
-    <td><img src="assets/generation/sketchgpt/airplane.gif" width="180" alt="SketchGPT airplane gif" /></td>
-    <td><img src="assets/generation/sketchgpt/bus.gif" width="180" alt="SketchGPT bus gif" /></td>
-    <td><img src="assets/generation/sketchgpt/canoe.gif" width="180" alt="SketchGPT canoe gif" /></td>
-    <td><img src="assets/generation/sketchgpt/car.gif" width="180" alt="SketchGPT car gif" /></td>
-    <td><img src="assets/generation/sketchgpt/helicopter.gif" width="180" alt="SketchGPT helicopter gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/airplane.gif" width="140" alt="SketchGPT airplane gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/bus.gif" width="140" alt="SketchGPT bus gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/canoe.gif" width="140" alt="SketchGPT canoe gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/car.gif" width="140" alt="SketchGPT car gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/helicopter.gif" width="140" alt="SketchGPT helicopter gif" /></td>
   </tr>
   <tr>
-    <td align="center"><strong>hot air balloon</strong></td>
-    <td align="center"><strong>motorbike</strong></td>
-    <td align="center"><strong>sailboat</strong></td>
-    <td align="center"><strong>submarine</strong></td>
-    <td align="center"><strong>train</strong></td>
+    <td width="20%" align="center"><strong>hot air balloon</strong></td>
+    <td width="20%" align="center"><strong>motorbike</strong></td>
+    <td width="20%" align="center"><strong>sailboat</strong></td>
+    <td width="20%" align="center"><strong>submarine</strong></td>
+    <td width="20%" align="center"><strong>train</strong></td>
   </tr>
   <tr>
-    <td><img src="assets/generation/sketchgpt/hot_air_balloon.gif" width="180" alt="SketchGPT hot air balloon gif" /></td>
-    <td><img src="assets/generation/sketchgpt/motorbike.gif" width="180" alt="SketchGPT motorbike gif" /></td>
-    <td><img src="assets/generation/sketchgpt/sailboat.gif" width="180" alt="SketchGPT sailboat gif" /></td>
-    <td><img src="assets/generation/sketchgpt/submarine.gif" width="180" alt="SketchGPT submarine gif" /></td>
-    <td><img src="assets/generation/sketchgpt/train.gif" width="180" alt="SketchGPT train gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/hot_air_balloon.gif" width="140" alt="SketchGPT hot air balloon gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/motorbike.gif" width="140" alt="SketchGPT motorbike gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/sailboat.gif" width="140" alt="SketchGPT sailboat gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/submarine.gif" width="140" alt="SketchGPT submarine gif" /></td>
+    <td width="20%" align="center"><img src="assets/generation/sketchgpt/train.gif" width="140" alt="SketchGPT train gif" /></td>
   </tr>
 </table>
 
