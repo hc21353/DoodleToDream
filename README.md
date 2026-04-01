@@ -118,15 +118,7 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ### SketchGPT
 
-
 ### VQ-SGen
-
-
-
-![SketchGPT_helicopter](https://github.com/user-attachments/assets/df386b8f-6f28-484c-9f57-534680db6b86)
-![SketchGPT_car](https://github.com/user-attachments/assets/bd1ed43f-650d-4a55-9459-3104d120555c)
-
-
 
 ---
 
