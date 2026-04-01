@@ -77,37 +77,36 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ### VQ-SGen stroke-by-stroke generation
 
-<table>
+<table width="100%">
   <tr>
-    <td align="center"><strong>airplane</strong></td>
-    <td align="center"><strong>bus</strong></td>
-    <td align="center"><strong>canoe</strong></td>
-    <td align="center"><strong>car</strong></td>
-    <td align="center"><strong>helicopter</strong></td>
+    <td width="20%" align="center"><strong>airplane</strong></td>
+    <td width="20%" align="center"><strong>bus</strong></td>
+    <td width="20%" align="center"><strong>canoe</strong></td>
+    <td width="20%" align="center"><strong>car</strong></td>
+    <td width="20%" align="center"><strong>helicopter</strong></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/526a579e-233f-41f1-8317-b8d76f75e7a3" width="180" alt="VQ-SGen airplane gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/dc4bf3dc-f31f-45d7-81bf-c4dd11e244f3" width="180" alt="VQ-SGen bus gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/f462eaaa-4736-4620-a8c3-dc042f8164af" width="180" alt="VQ-SGen canoe gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/f84e2735-e821-428b-844e-f787f2372903" width="180" alt="VQ-SGen car gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/bbd12eca-1d06-4652-8bb8-8d2542a53a42" width="180" alt="VQ-SGen helicopter gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/526a579e-233f-41f1-8317-b8d76f75e7a3" width="140" alt="VQ-SGen airplane gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/dc4bf3dc-f31f-45d7-81bf-c4dd11e244f3" width="140" alt="VQ-SGen bus gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/f462eaaa-4736-4620-a8c3-dc042f8164af" width="140" alt="VQ-SGen canoe gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/f84e2735-e821-428b-844e-f787f2372903" width="140" alt="VQ-SGen car gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/bbd12eca-1d06-4652-8bb8-8d2542a53a42" width="140" alt="VQ-SGen helicopter gif" /></td>
   </tr>
   <tr>
-    <td align="center"><strong>hot air balloon</strong></td>
-    <td align="center"><strong>motorbike</strong></td>
-    <td align="center"><strong>sailboat</strong></td>
-    <td align="center"><strong>submarine</strong></td>
-    <td align="center"><strong>train</strong></td>
+    <td width="20%" align="center"><strong>hot air balloon</strong></td>
+    <td width="20%" align="center"><strong>motorbike</strong></td>
+    <td width="20%" align="center"><strong>sailboat</strong></td>
+    <td width="20%" align="center"><strong>submarine</strong></td>
+    <td width="20%" align="center"><strong>train</strong></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/7784982f-fa75-49f6-89f3-7e0d5aa4485f" width="180" alt="VQ-SGen hot air balloon gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/06ec801b-fd15-4a46-a36f-4542c7db876f" width="180" alt="VQ-SGen motorbike gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/765b7534-d348-4b29-bc62-3c8722b38550" width="180" alt="VQ-SGen sailboat gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/f8fcb9fd-6f36-4e43-8bb3-b19408c5e85e" width="180" alt="VQ-SGen submarine gif" /></td>
-    <td><img src="https://github.com/user-attachments/assets/ae53a3f6-85a3-4753-b10a-68b421ea3526" width="180" alt="VQ-SGen train gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/7784982f-fa75-49f6-89f3-7e0d5aa4485f" width="140" alt="VQ-SGen hot air balloon gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/06ec801b-fd15-4a46-a36f-4542c7db876f" width="140" alt="VQ-SGen motorbike gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/765b7534-d348-4b29-bc62-3c8722b38550" width="140" alt="VQ-SGen sailboat gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/f8fcb9fd-6f36-4e43-8bb3-b19408c5e85e" width="140" alt="VQ-SGen submarine gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/ae53a3f6-85a3-4753-b10a-68b421ea3526" width="140" alt="VQ-SGen train gif" /></td>
   </tr>
 </table>
-
 ---
 
 # Implementation Detail
