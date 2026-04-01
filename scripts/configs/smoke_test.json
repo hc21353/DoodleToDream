@@ -1,0 +1,112 @@
+{
+  "classification": {
+    "classes": [
+      "airplane",
+      "bus",
+      "car",
+      "train"
+    ],
+    "samples_per_class": 24,
+    "train_ratio": 0.8,
+    "val_ratio": 0.1,
+    "image_size": 64,
+    "batch_size": 8,
+    "num_workers": 0,
+    "data_dir": "quickdraw_data",
+    "use_partial_strokes_train": true,
+    "partial_stroke_ratio_min": 0.5,
+    "partial_stroke_ratio_max": 1.0,
+    "dropout_rate": 0.3,
+    "num_epochs": 1,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "checkpoint_path": "scripts/artifacts/classification/best_model.pth",
+    "history_path": "scripts/artifacts/classification/history.json",
+    "seed": 42,
+    "dataset_mode": "synthetic"
+  },
+  "generation": {
+    "sketchgpt_train": {
+      "class_names": [
+        "airplane",
+        "bus"
+      ],
+      "n_train_per_class": 20,
+      "n_val_per_class": 8,
+      "n_test_per_class": 8,
+      "n_pretrain_per_class": 20,
+      "pretrain_epochs": 1,
+      "finetune_epochs": 1,
+      "batch_size": 4,
+      "pretrain_lr": 0.001,
+      "finetune_lr": 0.0005,
+      "max_seq": 128,
+      "base_dir": "scripts/artifacts/sketchgpt_full",
+      "skip_eda": true,
+      "skip_pretrain": false,
+      "skip_finetune": false,
+      "eda_samples": 10
+    },
+    "sketchgpt_generate": {
+      "class_names": [
+        "airplane",
+        "bus"
+      ],
+      "base_dir": "scripts/artifacts/sketchgpt_full"
+    },
+    "vq_sgen_train": {
+      "class_names": [
+        "airplane",
+        "bus"
+      ],
+      "base_dir": "scripts/artifacts/vq_sgen_full",
+      "shape_vocab_size": 128,
+      "loc_vocab_size": 128,
+      "max_strokes": 16,
+      "image_size": 64,
+      "canvas_size": 64,
+      "source_canvas_size": 64,
+      "shape_code_dim": 64,
+      "loc_code_dim": 32,
+      "shape_tokenizer_model_dim": 64,
+      "shape_tokenizer_num_layers": 1,
+      "location_tokenizer_model_dim": 32,
+      "location_tokenizer_num_layers": 1,
+      "model_dim": 128,
+      "num_heads": 4,
+      "num_layers": 2,
+      "ff_dim": 256,
+      "dropout": 0.1,
+      "token_residual_scale": 0.1,
+      "epochs": 1,
+      "batch_size": 4,
+      "lr": 0.001,
+      "samples_per_class": 12,
+      "class_only_samples_per_class": 1,
+      "train_shape_ae": true,
+      "train_location_ae": true,
+      "train_shape_tokenizer": true,
+      "train_location_tokenizer": true,
+      "train_generator": true,
+      "checkpoint_path": "scripts/artifacts/generation/vq_sgen.pt",
+      "history_path": "scripts/artifacts/generation/vq_sgen_history.json",
+      "seed": 42
+    },
+    "vq_sgen_generate": {
+      "checkpoint_path": "scripts/artifacts/generation/vq_sgen.pt",
+      "class_names": [
+        "airplane",
+        "bus"
+      ],
+      "output_dir": "scripts/artifacts/generated/vq_sgen",
+      "temperature": 1.0,
+      "top_p": 0.9,
+      "image_size": 128
+    }
+  },
+  "evaluation": {
+    "input_image_dir": "scripts/artifacts/generated/sketchgpt",
+    "classification_checkpoint_path": "scripts/artifacts/classification/best_model.pth",
+    "output_json_path": "scripts/artifacts/evaluation/confidence.json"
+  }
+}

@@ -19,6 +19,7 @@ dependencies = [
   "imageio",
   "requests",
   "scikit-learn",
+  "torchvision",
 ]
 
 [tool.setuptools]
