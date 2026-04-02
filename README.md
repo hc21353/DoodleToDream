@@ -133,41 +133,4 @@ pip install -r requirements.txt
 # Repository Structure
 
 ```text
-DoodleToDream-main/
-├── README.md
-├── pyproject.toml
-├── requirements.txt
-├── classification_mobilenetv2.ipynb
-├── classification_final.ipynb
-├── scripts/
-│   ├── check_sketchgpt.py
-│   ├── check_vq_sgen.py
-│   ├── run_classification.py
-│   ├── run_sketchgpt.py
-│   └── run_vq_sgen.py
-├── Classification/
-│   ├── configs/
-│   │   └── config.json
-│   └── src/quickdraw_classifier/
-│       ├── __init__.py
-│       ├── __main__.py
-│       ├── config.py
-│       ├── data.py
-│       ├── evaluation.py
-│       ├── model.py
-│       ├── pipeline.py
-│       ├── preprocessing.py
-│       ├── thresholds.py
-│       └── train.py
-├── SketchGPT/
-│   ├── configs/
-│   └── src/sketchgpt/
-├── VQ-SGen/
-│   ├── configs/
-│   └── src/vq_sgen/
-├── evaluation_metrics/
-│   ├── classification_metrics.py
-│   ├── evaluation_KID.py
-│   └── KID/
-└── sketchGPT.py
 ```
