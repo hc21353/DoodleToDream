@@ -15,25 +15,29 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 <table width="100%">
   <tr>
-    <td width="20%" align="center">
-      <img src="assets/classification/confidence_curve/sample1_step1.png" width="140" alt="step 1" /><br/>
-      <strong>confidence = 0.12</strong>
+    <td width="16%" align="center">
+      <img src="src/classification/classification_example/stroke1.png" width="140" alt="step 1" /><br/>
+      <strong>confidence = 0.194</strong>
     </td>
-    <td width="20%" align="center">
-      <img src="assets/classification/confidence_curve/sample1_step2.png" width="140" alt="step 2" /><br/>
-      <strong>confidence = 0.34</strong>
+    <td width="16%" align="center">
+      <img src="src/classification/classification_example/stroke2.png" width="140" alt="step 2" /><br/>
+      <strong>confidence = 0.705</strong>
     </td>
-    <td width="20%" align="center">
-      <img src="assets/classification/confidence_curve/sample1_step3.png" width="140" alt="step 3" /><br/>
-      <strong>confidence = 0.57</strong>
+    <td width="16%" align="center">
+      <img src="src/classification/classification_example/stroke3.png" width="140" alt="step 3" /><br/>
+      <strong>confidence = 0.885</strong>
     </td>
-    <td width="20%" align="center">
-      <img src="assets/classification/confidence_curve/sample1_step4.png" width="140" alt="step 4" /><br/>
-      <strong>confidence = 0.81</strong>
+    <td width="16%" align="center">
+      <img src="src/classification/classification_example/stroke4.png" width="140" alt="step 4" /><br/>
+      <strong>confidence = 0.929</strong>
     </td>
-    <td width="20%" align="center">
-      <img src="assets/classification/confidence_curve/sample1_step5.png" width="140" alt="step 5" /><br/>
-      <strong>confidence = 0.93</strong>
+    <td width="16%" align="center">
+      <img src="src/classification/classification_example/stroke5.png" width="140" alt="step 5" /><br/>
+      <strong>confidence = 0.983</strong>
+    </td>
+    <td width="16%" align="center">
+      <img src="src/classification/classification_example/stroke6.png" width="140" alt="step 6" /><br/>
+      <strong>confidence = 0.985</strong>
     </td>
   </tr>
 </table>
