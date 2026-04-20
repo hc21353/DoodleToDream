@@ -134,10 +134,12 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 - **Core idea**:
   - Keeps the VQ-SGen decomposition into **shape tokens** and **location tokens**, generated autoregressively and decoded back to strokes.
+  - The pipeline is implemented with five components: **Shape AutoEncoder**, **Shape Tokenizer**, **Location AutoEncoder**, **Location Tokenizer**, and **Generator**.
 
 - **Main differences from the original VQ-SGen module**:
   - Strokes are **reordered before training** (by descending stroke bounding-box size), so the generated sequence order differs from the original drawing order.
   - Early strokes receive **higher loss weight**, reflecting the project goal that sketches should become recognizable as early as possible.
+  - In the generator, **shape tokens are generated first**, and **location tokens are then generated conditionally based on the shape sequence**.
 
 ---
 
@@ -148,11 +150,6 @@ conda create -n quickdraw python=3.10
 conda activate quickdraw
 pip install -r requirements.txt
 ```
-
-- The project defines `requires-python >= 3.9` in `pyproject.toml`.
-- Core dependencies are managed through `requirements.txt`.
-- Main libraries include `torch`, `torchvision`, `numpy`, `matplotlib`, `Pillow`, `scipy`, `tqdm`, `imageio`, `requests`, and `scikit-learn`.
-- QuickDraw data should be prepared under `quickdraw_data/`, which is the default data directory used by the configs.
 
 # Run
 
@@ -199,9 +196,6 @@ Compute classifier confidence on generated images:
 ```bash
 python scripts/compute_confidence.py --config scripts/configs/default.json
 ```
-
-- `default.json` is the main experiment config.
-- `smoke_test.json` is a lightweight config for quick pipeline checks.
 
 # Repository Structure
 
