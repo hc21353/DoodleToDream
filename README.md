@@ -114,11 +114,21 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ## Classification
 
+The classifier is a stroke-to-raster baseline built for the "guess as the sketch unfolds" setting. Each QuickDraw sample is loaded from the simplified `.ndjson` format, filtered to recognized drawings, rasterized on-the-fly into a square image, and then fed to a MobileNetV2 classifier initialized with ImageNet weights. During training, the model does not always see the full sketch: a random prefix of strokes is sampled so that the classifier learns to predict from incomplete drawings as well as completed ones. Standard image-space augmentation (rotation, affine transform) is applied after rasterization, and the model is trained with cross-entropy on the 10 target classes. At inference time, the same checkpoint is used to report both the top prediction and its confidence, which is later used to visualize how recognizability changes as more strokes are added.
+
 ## Generation
 
 ### SketchGPT
 
+Our SketchGPT implementation keeps the paper’s primitive-token autoregressive idea, but adapts it into a lightweight project pipeline centered on 10 QuickDraw classes. Raw drawings are converted to stroke-3 format, normalized, and discretized into direction primitives; longer movements are represented by repeating the same primitive token multiple times, and stroke boundaries are marked with a separator token. Before training, we run a small EDA step on the target classes to estimate a suitable primitive length and sequence limit, so the tokenizer is tuned to the actual class subset instead of being fully fixed beforehand.
+
+Compared with the original paper-style setup, this repository uses a more practical two-stage workflow: one shared language-model pretraining stage on the mixed class set, followed by separate class-wise fine-tuning and separate checkpoints for each class. So, instead of one unified conditional generator used at runtime, generation is operationalized as "one pretrained base + one finetuned generator per class." Sampling is also simplified for project use: top-k sampling with temperature is used, a minimum number of new tokens is enforced before EOS, and the outputs are exported not only as final sketches but also as sequential stroke accumulation images for confidence analysis.
+
 ### VQ-SGen
+
+Our VQ-SGen pipeline keeps the core decomposition of the original paper—separating **shape** and **location** representations and generating their discrete codes autoregressively—but the actual implementation is intentionally more task-specific. In this repository, the active pipeline is QuickDraw-only, with the generator trained on the 10 target classes and the representation modules reused from pretrained checkpoints by default. In other words, the code is set up so that shape AE, location AE, and both tokenizers are usually treated as reusable representation modules, while the main project-side adaptation happens in the generator.
+
+Relative to the original VQ-SGen formulation, the generator here contains several practical modifications. First, QuickDraw strokes are canonically reordered before training (currently by descending stroke bounding-box area), which makes generation more stable but changes the sequential target itself. Second, the generator does not use only discrete code IDs: it adds a small residual token embedding on top of projected codebook features (`codebook_residual` mode), so the autoregressive model can retain token-specific flexibility beyond pure codebook lookup. Third, training includes scheduled sampling and an explicit early-stroke loss upweighting scheme, reflecting the project goal that the beginning of the drawing should already become recognizable. Finally, the output path is evaluation-oriented: generated shape/location token sequences are decoded back into cumulative stroke frames and final canvases, so the model can be compared directly with the classifier’s confidence-over-time analysis.
 
 ---
 
