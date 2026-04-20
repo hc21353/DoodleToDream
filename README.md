@@ -256,11 +256,3 @@ DoodleToDream/
             ├── pipeline.py
             └── utils.py
 ```
-
-- `scripts/` contains the top-level entry points for training, generation, and evaluation.
-- `src/classification/` contains the classification dataset, model, training, and inference code.
-- `src/evaluation/` contains confidence evaluation utilities.
-- `src/generation/SketchGPT/` contains the SketchGPT-based generation pipeline.
-- `src/generation/VQ-SGen/` contains the VQ-SGen-based generation pipeline.
-
-
