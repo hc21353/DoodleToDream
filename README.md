@@ -141,15 +141,92 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ---
 
-# Environment Setup
-
-```bash
-conda create -n quickdraw python=3.10
-conda activate quickdraw
-pip install -r requirements.txt
-```
-
 # Repository Structure
 
-```text
+- `classification/`
+  - Classification models, training scripts, evaluation code, and stroke-based recognition pipeline.
+
+- `generation/SketchGPT/`
+  - SketchGPT-based sequential generation code, including preprocessing, pretraining, class-wise fine-tuning, and sampling.
+
+- `generation/VQ-SGen/`
+  - VQ-SGen-based sequential generation code, including shape/location representation learning, tokenization, generator training, and decoding.
+
+- `data/`
+  - Dataset files, preprocessing outputs, and cached intermediate artifacts.
+
+- `checkpoints/`
+  - Saved model weights for classification and generation modules.
+
+- `outputs/`
+  - Generated sketches, evaluation results, visualizations, and logs.
+
+- `README.md`
+  - Project overview, setup instructions, and usage guide.
+
+
+# Environment Setup
+
+- Create a Python environment with the project’s required version.
+- Install the dependencies listed in `requirements.txt`.
+- Prepare the QuickDraw data in the expected directory structure before running training or evaluation.
+- If pretrained checkpoints are needed, place them under the checkpoint directory used by each module.
+
+Example setup:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+````
+
+# Run
+
+## Classification
+
+* Train the completed / stroke-based classification model from the classification module.
+* Use the saved checkpoint to run evaluation on completed sketches or progressive stroke inputs.
+
+Example:
+
+```bash
+python classification/train.py
+python classification/eval.py
+```
+
+## Generation – SketchGPT
+
+* First preprocess QuickDraw sketches into stroke / token sequences.
+* Run shared pretraining on the mixed class set.
+* Then run class-wise fine-tuning and sample sketches from each class-specific generator.
+
+Example:
+
+```bash
+python generation/SketchGPT/preprocess.py
+python generation/SketchGPT/pretrain.py
+python generation/SketchGPT/finetune.py
+python generation/SketchGPT/sample.py
+```
+
+## Generation – VQ-SGen
+
+* Train or load the representation modules:
+
+  * shape autoencoder,
+  * shape tokenizer,
+  * location autoencoder,
+  * location tokenizer.
+* Then train the generator on top of the learned discrete representations.
+* Finally decode generated tokens back into stroke sequences and rendered sketches.
+
+Example:
+
+```bash
+python generation/VQ-SGen/train_shape_ae.py
+python generation/VQ-SGen/train_shape_tokenizer.py
+python generation/VQ-SGen/train_location_ae.py
+python generation/VQ-SGen/train_location_tokenizer.py
+python generation/VQ-SGen/train_generator.py
+python generation/VQ-SGen/sample.py
 ```
