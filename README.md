@@ -114,51 +114,30 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ## Classification
 
-- **Task setup**: stroke-based QuickDraw classification on 10 target classes.
-- **Input pipeline**: recognized drawings are loaded from simplified `.ndjson`, converted to raster images, and fed to a MobileNetV2 classifier.
-- **Training strategy**: the model is trained not only on full sketches but also on partial stroke prefixes, so it can predict while the drawing is still unfolding.
-- **Augmentation**: standard image-space augmentation is applied after rasterization.
-- **Output usage**: the classifier is later reused to measure class confidence over generation steps.
+- Uses **MobileNetV2** as the final backbone after comparison with ResNet18.
+- Targets both **completed sketch classification** and **incomplete sketch classification** as strokes are progressively added.
+- Updates predictions **stroke by stroke** instead of classifying only the final rendered image.
+- Uses confidence-based prediction logic so the model can decide the class as soon as the sketch becomes sufficiently recognizable.
+- Evaluates the stroke-based pipeline with a combined score based on **Stroke Score** and **Pixel Score**.
 
 ## Generation – SketchGPT
 
-- **Core idea**: follows the SketchGPT-style autoregressive generation over discretized stroke primitives.
-- **Tokenization**: stroke sequences are converted to stroke-3 format, normalized, and discretized into direction primitives with separator tokens for stroke boundaries.
-- **Project-specific preprocessing**: primitive length / sequence settings are chosen based on exploratory analysis on the target QuickDraw subset.
+- **Core idea**:
+  - Follows the SketchGPT-style autoregressive generation over discretized stroke primitives.
 
-- **Main difference from the original SketchGPT setup**:
+- **Main difference from the original SketchGPT module**:
   - a shared pretraining stage is used first,
   - then **separate class-wise fine-tuning** is performed,
   - and the repository stores **one generator per class** rather than relying on a single runtime conditional generator.
 
-- **Sampling implementation**:
-  - top-k + temperature sampling,
-  - minimum generation length before EOS,
-  - export of both final sketches and intermediate cumulative stroke visualizations.
-
 ## Generation – VQ-SGen
 
-- **Core idea**: keeps the VQ-SGen decomposition into **shape tokens** and **location tokens**, generated autoregressively and decoded back to strokes.
-- **Project setup**: the active pipeline is QuickDraw-only and centered on the project’s target class subset.
-- **Representation modules**:
-  - shape AE,
-  - location AE,
-  - shape tokenizer,
-  - location tokenizer.
+- **Core idea**:
+  - Keeps the VQ-SGen decomposition into **shape tokens** and **location tokens**, generated autoregressively and decoded back to strokes.
 
-- **Main differences from the original VQ-SGen setup**:
-  - the code is organized so that pretrained representation modules are usually reused, while adaptation is focused mainly on the **generator**;
-  - strokes are **reordered before training** (currently by descending stroke bounding-box size), so the generated sequence order differs from the original drawing order;
-  - the generator uses not only discrete code IDs but also a **codebook residual embedding** on top of projected codebook features;
-  - training includes **scheduled sampling**;
-  - early strokes receive **higher loss weight**, reflecting the project goal that sketches should become recognizable as early as possible.
-
-- **Evaluation-oriented output**:
-  - generated token sequences are decoded into cumulative stroke frames,
-  - final sketches and intermediate steps are both saved,
-  - which makes direct comparison with classifier confidence trajectories possible.
-
-
+- **Main differences from the original VQ-SGen module**:
+  - Strokes are **reordered before training** (by descending stroke bounding-box size), so the generated sequence order differs from the original drawing order.
+  - Early strokes receive **higher loss weight**, reflecting the project goal that sketches should become recognizable as early as possible.
 
 ---
 
