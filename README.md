@@ -141,5 +141,126 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ---
 
+# Environment Setup
+
+```bash
+conda create -n quickdraw python=3.10
+conda activate quickdraw
+pip install -r requirements.txt
+```
+
+- The project defines `requires-python >= 3.9` in `pyproject.toml`.
+- Core dependencies are managed through `requirements.txt`.
+- Main libraries include `torch`, `torchvision`, `numpy`, `matplotlib`, `Pillow`, `scipy`, `tqdm`, `imageio`, `requests`, and `scikit-learn`.
+- QuickDraw data should be prepared under `quickdraw_data/`, which is the default data directory used by the configs.
+
+# Run
+
+## Classification
+
+Train the classification model:
+
+```bash
+python scripts/train_classification.py --config scripts/configs/default.json
+```
+
+## Generation – SketchGPT
+
+Train the SketchGPT generation pipeline:
+
+```bash
+python scripts/train_generation_sketchgpt.py --config scripts/configs/default.json
+```
+
+Generate images with the trained SketchGPT model:
+
+```bash
+python scripts/generate_images_sketchgpt.py --config scripts/configs/default.json
+```
+
+## Generation – VQ-SGen
+
+Train the VQ-SGen generation pipeline:
+
+```bash
+python scripts/train_generation_vq_sgen.py --config scripts/configs/default.json
+```
+
+Generate images with the trained VQ-SGen model:
+
+```bash
+python scripts/generate_images_vq_sgen.py --config scripts/configs/default.json
+```
+
+## Evaluation
+
+Compute classifier confidence on generated images:
+
+```bash
+python scripts/compute_confidence.py --config scripts/configs/default.json
+```
+
+- `default.json` is the main experiment config.
+- `smoke_test.json` is a lightweight config for quick pipeline checks.
+
 # Repository Structure
+
+```text
+DoodleToDream/
+├── README.md
+├── pyproject.toml
+├── requirements.txt
+├── scripts/
+│   ├── configs/
+│   │   ├── default.json
+│   │   └── smoke_test.json
+│   ├── train_classification.py
+│   ├── train_generation_sketchgpt.py
+│   ├── train_generation_vq_sgen.py
+│   ├── generate_images_sketchgpt.py
+│   ├── generate_images_vq_sgen.py
+│   └── compute_confidence.py
+└── src/
+    ├── classification/
+    │   ├── __init__.py
+    │   ├── data.py
+    │   ├── model.py
+    │   ├── train.py
+    │   └── infer.py
+    ├── evaluation/
+    │   ├── __init__.py
+    │   └── confidence.py
+    └── generation/
+        ├── __init__.py
+        ├── SketchGPT/
+        │   ├── __init__.py
+        │   ├── config.py
+        │   ├── data.py
+        │   ├── models.py
+        │   ├── train.py
+        │   ├── training.py
+        │   ├── generate.py
+        │   ├── pipeline.py
+        │   ├── pipeline_runtime.py
+        │   └── visualization.py
+        └── VQ-SGen/
+            ├── __init__.py
+            ├── config.py
+            ├── datasets.py
+            ├── models.py
+            ├── quickdraw.py
+            ├── stage_config.py
+            ├── train.py
+            ├── train_pipeline.py
+            ├── generate.py
+            ├── pipeline.py
+            └── utils.py
+```
+
+- `scripts/` contains the top-level entry points for training, generation, and evaluation.
+- `src/classification/` contains the classification dataset, model, training, and inference code.
+- `src/evaluation/` contains confidence evaluation utilities.
+- `src/generation/SketchGPT/` contains the SketchGPT-based generation pipeline.
+- `src/generation/VQ-SGen/` contains the VQ-SGen-based generation pipeline.
+
 
