@@ -110,7 +110,14 @@ The project focuses not only on final sketch quality, but also on the **drawing 
 
 ---
 
+# References
+
+- **SketchGPT**: [SketchGPT: Autoregressive Modeling for Sketch Generation and Recognition](https://arxiv.org/abs/2405.03099)
+- **VQ-SGen**: [Vector-Quantized Stroke Representation for Sketch Generation](https://arxiv.org/abs/2411.16446)
+
 # Implementation Detail
+
+---
 
 ## Classification
 
