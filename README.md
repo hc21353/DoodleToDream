@@ -37,7 +37,7 @@ The project focuses not only on final sketch quality, but also on the **drawing 
     </td>
     <td width="16%" align="center">
       <img src="src/classification/classification_example/stroke6.png" width="140" alt="step 6" /><br/>
-      <strong>confidence = 0.985</strong>
+      <strong>0.985</strong>
     </td>
   </tr>
 </table>
