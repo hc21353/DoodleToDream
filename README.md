@@ -57,9 +57,9 @@ The project focuses not only on final sketch quality, but also on the **drawing 
     <td width="20%" align="center"><strong>helicopter</strong></td>
   </tr>
   <tr>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/airplane.gif" width="140" alt="SketchGPT airplane gif" /></td>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/bus.gif" width="140" alt="SketchGPT bus gif" /></td>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/canoe.gif" width="140" alt="SketchGPT canoe gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/fe8b2925-075a-462b-92da-0f473388f99c" width="140" alt="SketchGPT airplane gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/654c44b2-fde8-406b-ad85-27a749344fdb" width="140" alt="SketchGPT bus gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/db5ddd30-5731-4abf-aa8c-38ccebe8598c" width="140" alt="SketchGPT canoe gif" /></td>
     <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/bd1ed43f-650d-4a55-9459-3104d120555c" width="140" alt="SketchGPT car gif" /></td>
     <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/df386b8f-6f28-484c-9f57-534680db6b86" width="140" alt="SketchGPT helicopter gif" /></td>
   </tr>
@@ -71,11 +71,11 @@ The project focuses not only on final sketch quality, but also on the **drawing 
     <td width="20%" align="center"><strong>train</strong></td>
   </tr>
   <tr>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/hot_air_balloon.gif" width="140" alt="SketchGPT hot air balloon gif" /></td>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/motorbike.gif" width="140" alt="SketchGPT motorbike gif" /></td>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/sailboat.gif" width="140" alt="SketchGPT sailboat gif" /></td>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/submarine.gif" width="140" alt="SketchGPT submarine gif" /></td>
-    <td width="20%" align="center"><img src="assets/generation/sketchgpt/train.gif" width="140" alt="SketchGPT train gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/7fffd1b9-46e1-4e5c-8715-044de17f5f54" width="140" alt="SketchGPT hot air balloon gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/f366a605-69a5-400d-9043-0ddfb4f22155" width="140" alt="SketchGPT motorbike gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/ff356c53-c64b-4c8e-b302-653e93429cbf" width="140" alt="SketchGPT sailboat gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/479d81dc-c22f-4e13-9c1c-e2b1622ca964" width="140" alt="SketchGPT submarine gif" /></td>
+    <td width="20%" align="center"><img src="https://github.com/user-attachments/assets/641f2439-56a1-4ad2-9aa1-b8a4c1a44fa0" width="140" alt="SketchGPT train gif" /></td>
   </tr>
 </table>
 
